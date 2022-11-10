@@ -1,0 +1,125 @@
+/*Info about the author 
+Name, surname: <Iļja, Polozovs>
+Student ID number: <ip22061>
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Russo+One&display=swap');
+
+
+#slogan {
+  font-family: 'Russo One', sans-serif;
+
+}
+
+
+.top-img {
+  height: 100vh;
+  background-image: url('images/intro-img-812gts.jfif');
+  background-size: cover;
+  position: relative;
+}
+
+.slogan{
+  position: absolute;
+  text-align: center;
+  vertical-align: center;
+
+}
+body {
+  min-width: 534px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  background-image: url("images/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Russo One', sans-serif;
+  color: white
+}
+
+
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.centered-content {
+  margin: 0 200px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  
+}
+
+nav{
+  background-color: #000;
+  text-transform: uppercase;
+  position: fixed;
+}
+
+.parent-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upper-menu .sub-menu-caption {
+  display: flex;
+  flex: 1;
+}
+
+.sub-menu-caption {
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.upper-menu {
+  padding-left: 10px;
+}
+
+.upper-menu a {
+  cursor: pointer;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  z-index: 1;
+}
+
+.sub-menu-caption:hover .sub-menu {
+  display: block;
+}
+
+.right-menu {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+}
+
+.right-menu a {
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+}
+
+/* .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  */
