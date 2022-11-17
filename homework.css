@@ -15,7 +15,7 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  text-align: center;
+  text-align: justify;
 }
 
 
@@ -32,31 +32,34 @@ h6 {
 }
 
 
-p{
+p {
   opacity: 0.6;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
-.lead{
+.lead {
   opacity: 1;
 }
 
-.dynamics-list{
+.dynamics-list {
   opacity: 0.6;
 }
 
-#logo{
+#logo {
 
   position: fixed;
   bottom: 0;
   right: 0;
   margin: 10px;
 }
-#logo:hover{
+
+#logo:hover {
   border: 2px solid red;
   border-radius: 10px;
 }
 
-.specs{
+.specs {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -75,21 +78,34 @@ a {
 
 .centered-content {
   margin: 0 200px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));  
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
+
 .top-img {
   height: 100vh;
   background-image: url('images/intro-img-812gts.jfif');
   background-size: cover;
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
-.slogan{
+.title-red {
+  text-align: left;
+  color: red;
+  margin-left: 3%;
+}
+
+h1{
+  font-size: large;
+  font-weight: lighter;
+  font-variant:small-caps
+}
+
+.slogan {
   position: absolute;
   bottom: 14%;
   left: 48.3%;
-  color: rgba(0,0,0,0.6);
+  color: rgba(0, 0, 0, 0.6);
   text-shadow: 2px 2px 2px;
   transform: translate(-50%, -50%);
   font-size: 30px;
@@ -98,14 +114,15 @@ a {
   font-family: 'Russo One', sans-serif;
 }
 
-nav{
-  
+nav {
+
   text-transform: uppercase;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
+  /* Safari */
   position: sticky;
   top: 0;
   background-color: #000;
-  z-index:99;
+  z-index: 99;
 }
 
 
@@ -115,11 +132,11 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: rgba(255,255,255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 
 }
 
-.parent-menu li a:hover{
+.parent-menu li a:hover {
   text-decoration: underline;
 }
 
@@ -133,14 +150,15 @@ nav{
   padding-left: 16px;
   padding-right: 5px;
 }
+
 .upper-menu .sub-menu-caption {
   display: flex;
   flex: 1;
 }
 
 
-.sub-menu-caption:hover{
-  color:red;
+.sub-menu-caption:hover {
+  color: red;
 }
 
 
@@ -150,7 +168,7 @@ nav{
 }
 
 .sub-menu {
-  list-style:none;
+  list-style: none;
   position: absolute;
   left: 0;
   display: none;
@@ -170,7 +188,7 @@ nav{
 }
 
 
-.sub-menu li a{
+.sub-menu li a {
   text-decoration: none;
   font-family: sans-serif;
   display: block;
@@ -180,8 +198,8 @@ nav{
   padding-left: 16px;
 }
 
-.sub-menu li a:hover{
-  cursor:pointer;
+.sub-menu li a:hover {
+  cursor: pointer;
   text-decoration: underline;
   color: darkred;
 
@@ -199,12 +217,12 @@ nav{
 }
 
 
-.upper-menu a{
+.upper-menu a {
   border-left: 1px solid darkred;
   padding: 10px 15px;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .right-menu a {
