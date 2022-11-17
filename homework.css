@@ -6,25 +6,7 @@ Student ID number: <ip22061>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Russo+One&display=swap');
 
 
-#slogan {
-  font-family: 'Russo One', sans-serif;
 
-}
-
-
-.top-img {
-  height: 100vh;
-  background-image: url('images/intro-img-812gts.jfif');
-  background-size: cover;
-  position: relative;
-}
-
-.slogan{
-  position: absolute;
-  text-align: center;
-  vertical-align: center;
-
-}
 body {
   min-width: 534px;
   font-family: 'Montserrat', sans-serif;
@@ -35,6 +17,8 @@ body {
   background-attachment: fixed;
   text-align: center;
 }
+
+
 
 
 h1,
@@ -48,6 +32,41 @@ h6 {
 }
 
 
+p{
+  opacity: 0.6;
+}
+
+.lead{
+  opacity: 1;
+}
+
+.dynamics-list{
+  opacity: 0.6;
+}
+
+#logo{
+
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+#logo:hover{
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+.specs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
 
 a {
   color: white;
@@ -56,47 +75,116 @@ a {
 
 .centered-content {
   margin: 0 200px;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));  
+}
+.top-img {
+  height: 100vh;
+  background-image: url('images/intro-img-812gts.jfif');
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.slogan{
+  position: absolute;
+  bottom: 14%;
+  left: 48.3%;
+  color: rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 2px;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-family: 'Russo One', sans-serif;
 }
 
 nav{
-  background-color: #000;
+  
   text-transform: uppercase;
-  position: fixed;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #000;
+  z-index:99;
 }
 
+
+
 .parent-menu {
+  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: rgba(255,255,255, 0.7);
+
 }
 
+.parent-menu li a:hover{
+  text-decoration: underline;
+}
+
+
+.sub-menu-caption {
+  cursor: pointer;
+  position: relative;
+  border-left: 1px solid darkred;
+  text-align: right;
+  line-height: 37px;
+  padding-left: 16px;
+  padding-right: 5px;
+}
 .upper-menu .sub-menu-caption {
   display: flex;
   flex: 1;
 }
 
-.sub-menu-caption {
-  cursor: pointer;
-  padding: 0 15px;
+
+.sub-menu-caption:hover{
+  color:red;
 }
 
-.upper-menu {
-  padding-left: 10px;
-}
 
 .upper-menu a {
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .sub-menu {
-  display: none;
+  list-style:none;
   position: absolute;
   left: 0;
+  display: none;
+  z-index: 1;
+}
+
+.sub-menu li {
+  float: left;
+  line-height: 35px;
+  height: 35px;
   background-color: #000;
   width: 100%;
-  z-index: 1;
+  text-align: center;
+  margin-right: 2px;
+  border: 1px solid darkred;
+  border-top: none;
+}
+
+
+.sub-menu li a{
+  text-decoration: none;
+  font-family: sans-serif;
+  display: block;
+  float: left;
+  font-style: italic;
+  font-size: 14px;
+  padding-left: 16px;
+}
+
+.sub-menu li a:hover{
+  cursor:pointer;
+  text-decoration: underline;
+  color: darkred;
+
 }
 
 .sub-menu-caption:hover .sub-menu {
@@ -105,15 +193,26 @@ nav{
 
 .right-menu {
   display: flex;
+  height: 100%;
   flex: 1;
-  justify-content: end;
+  justify-content: flex-end;
+}
+
+
+.upper-menu a{
+  border-left: 1px solid darkred;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
 }
 
 .right-menu a {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.5);
   color: #fff;
-  padding: 10px;
+  text-decoration: none;
 }
+
 
 /* .navbar a {
     float: left;
