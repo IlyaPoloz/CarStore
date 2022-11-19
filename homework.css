@@ -19,8 +19,6 @@ body {
 }
 
 
-
-
 h1,
 h2,
 h3,
@@ -224,7 +222,8 @@ nav {
 /* -------------MAIN TEXT ------------------ */
 
 .main-container{
-  margin: 30px 75px;
+  padding: 30px 75px 15px 75px;
+  border-bottom: 1px solid darkred;
 }
 
 .title-red {
@@ -306,7 +305,7 @@ ul.dynamics-list{
 /* -------------SPECS------------- */
 
 .spec-container{
-  margin: 0px 100px;
+  margin: 30px 100px;
   width: 91%;
 }
 
@@ -323,10 +322,10 @@ dl{
   overflow: hidden;
   padding: 0;
   margin: 0;
+  font-size: 13px;
   margin-bottom: 10px;
 }
 dt{
-  font-size: 13px;
   line-height: 20px;
   float: left;
   width: 40%;
@@ -335,7 +334,6 @@ dt{
 }
 dd{
   
-  font-size: 13px;
   float: left;
   width: 40%;
   padding: 0;
@@ -344,9 +342,56 @@ dd{
 }
 
 .bottom{
-  width: 100%;
+  width: 100%; 
+   
 }
 
 .bottom dt{
+  width: 0;
+  position: relative;
+  min-height: 1px;
+}
+.bottom dd{
+  position: relative;
+  top: 3px;
+  width: 100%;
+  margin-left: 5px;
+}
+.bottom dl:nth-child(3){
   
+}
+
+
+/* -------------FOOTER--------- */
+
+.menu-bottom{
+  border-top: 1px solid darkred;
+  padding: 10px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  
+}
+.menu-bottom li a{
+  color:red;
+  text-transform: capitalize;
+  padding: 0px 5px;
+  font-variant: small-caps;
+}
+.menu-bottom li:hover{
+  text-decoration: underline;
+}
+.menu-bottom li:not(:last-child) a{
+  border-right: 1px solid darkred;
+}
+
+#copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: red;
+  margin-bottom: 10px;
 }
