@@ -126,8 +126,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   color: rgba(255, 255, 255);
-
-
 }
 
 .parent-menu li a:hover {
@@ -141,7 +139,6 @@ nav {
   text-align: right;
   height: 100%;
   padding: 10px 5px 10px 16px;
-
 }
 
 .sub-menu-caption:hover {
@@ -196,7 +193,7 @@ nav {
   padding-left: 16px;
 }
 
-.sub-menu li a:hover {
+.sub-menu li:hover a {
   cursor: pointer;
   text-decoration: underline;
   color: red;
@@ -399,6 +396,7 @@ dd {
 
 .menu-bottom li a {
   color: red;
+  
   text-transform: capitalize;
   padding: 0px 5px;
   font-variant: small-caps;
